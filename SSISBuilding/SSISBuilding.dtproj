@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">UIPJONHARD1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMgExBkuaKU++2kadonl76gAAAAACAAAAAAADZgAAwAAAABAAAABMdAeTJZHdnoAwl6t6mWv/AAAAAASAAACgAAAAEAAAAKdvxEDXxuPlBwz2Xqz5Ne2IAAAAntOpglqBRyzO99+t8bHuAlYJwgOZvLv7zZw2PzbVVuFylloU6aOnlr3V8Io0A9+LWgz6bZKRBebKlvDKO7fnsBNPCg+Qnkm39/++Oey2fzmT3/5NkUs8Q1nKe4BKovcKFU+SCUxo80d2rYSun08XuBnOUSAWigKp2dFoAIQuVJx4CesMWqWBtxQAAAAKNTzi+/yuSh6faodMluy3mGOTNQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMgExBkuaKU++2kadonl76gAAAAACAAAAAAADZgAAwAAAABAAAABCdZXwn5QVuSIl81bfRr3vAAAAAASAAACgAAAAEAAAADPuEHnVTx0vDjR1dRd4YAOIAAAArgK+lCRPdsbzWWVyL9bJ9mxxEMC3HM+dkJWg9fYIhcPeSXcr/O4hHTfV5Tw7DDWeHyFeyf7NDJYq6AnMl9okLYhb4bkKaLXmGegp9OeDLuD5eE1pNLd5zvVf+qiTy3zmQqrwoHlJ+LiCN5E0/rFZs+z7fH8uuEZc8Op6ym0063cNQL9KyZszgBQAAACC7zeSLBIA8fMUTfFXAtKtjOnzKw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -62,6 +62,10 @@
     <ProjectItem>
       <Name>SSIS.MSBuild.proj</Name>
       <FullPath>SSIS.MSBuild.proj</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BuildSample.biml</Name>
+      <FullPath>BuildSample.biml</FullPath>
     </ProjectItem>
   </Miscellaneous>
   <Configurations>

@@ -1,0 +1,19 @@
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <!--<Projects>
+      <PackageProject Name="ExampleSSISProject">
+        <Parameters>
+          <Parameter Name="ETLConfig_ConnectionString" DataType="String"></Parameter>
+          <Parameter Name="Audit" DataType="String"></Parameter>
+        </Parameters>
+        <Packages>
+          <Package PackageName="Test" />
+        </Packages>
+      </PackageProject>
+    </Projects> -->
+    
+    <Packages>
+        <Package Name="Test">
+            <!-- Package Content -->
+        </Package>
+    </Packages>
+</Biml>
