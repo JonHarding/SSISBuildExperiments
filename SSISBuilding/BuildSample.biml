@@ -1,18 +1,23 @@
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
-    <!--<Projects>
-      <PackageProject Name="ExampleSSISProject">
+    <Projects>
+      <PackageProject Name="DynamicSSIS" ProjectSubpath="DynamicSSIS">
         <Parameters>
           <Parameter Name="ETLConfig_ConnectionString" DataType="String"></Parameter>
           <Parameter Name="Audit" DataType="String"></Parameter>
         </Parameters>
         <Packages>
           <Package PackageName="Test" />
+          <Package PackageName="Test2" />
         </Packages>
       </PackageProject>
-    </Projects> -->
+    </Projects>
     
-    <Packages>
+    <!-- Package Definitions -->
+    <Packages >
         <Package Name="Test">
+            <!-- Package Content -->
+        </Package>
+        <Package Name="Test2">
             <!-- Package Content -->
         </Package>
     </Packages>
