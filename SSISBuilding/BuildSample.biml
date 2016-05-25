@@ -1,6 +1,6 @@
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Projects>
-      <PackageProject Name="DynamicSSIS" ProjectSubpath="DynamicSSIS">
+      <PackageProject Name="SSISBuilding" ProjectSubpath="SSISBuilding">
         <Parameters>
           <Parameter Name="ETLConfig_ConnectionString" DataType="String"></Parameter>
           <Parameter Name="Audit" DataType="String"></Parameter>
