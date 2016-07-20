@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Customer]
+(
+	[CustomerId] INT IDENTITY(1,1) NOT NULL
+   ,[FullName] NVARCHAR(255) NOT NULL
+   ,CONSTRAINT PK_Customer PRIMARY KEY CLUSTERED (CustomerId) ON [PRIMARY]
+)
