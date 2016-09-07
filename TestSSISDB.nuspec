@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<metadata>
+<id>MyDatabase</id>
+<version>1.0.0</version>
+<title>TestSSISDB dacpac nuget package</title>
+<authors>sqldatatools</authors>
+<requireLicenseAcceptance>false</requireLicenseAcceptance>
+<description>Nuget package demo for TestSSISDB</description>
+<copyright>@your copyright statement</copyright>
+</metadata>
+<files>
+<file src="\TestSSISDB\bin\Debug\TestSSISDB.dacpac" target="content\TestSSISDB.dacpac" />
+</files>
+</package>
