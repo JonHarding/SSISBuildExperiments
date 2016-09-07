@@ -5,13 +5,30 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSISBuilding", "SSISBuilding\SSISBuilding.dtproj", "{F6771668-C316-4026-B389-AE91C483AA3A}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TestSSISDB", "TestSSISDB\TestSSISDB.sqlproj", "{CE8F03C4-BB85-4F75-B348-C0709E1A7776}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Development|Default = Development|Default
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6771668-C316-4026-B389-AE91C483AA3A}.Development|Default.ActiveCfg = Development
-		{F6771668-C316-4026-B389-AE91C483AA3A}.Development|Default.Build.0 = Development
+		{F6771668-C316-4026-B389-AE91C483AA3A}.Debug|Any CPU.ActiveCfg = Development
+		{F6771668-C316-4026-B389-AE91C483AA3A}.Debug|Any CPU.Build.0 = Development
+		{F6771668-C316-4026-B389-AE91C483AA3A}.Development|Any CPU.ActiveCfg = Development
+		{F6771668-C316-4026-B389-AE91C483AA3A}.Development|Any CPU.Build.0 = Development
+		{F6771668-C316-4026-B389-AE91C483AA3A}.Release|Any CPU.ActiveCfg = Development
+		{F6771668-C316-4026-B389-AE91C483AA3A}.Release|Any CPU.Build.0 = Development
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8F03C4-BB85-4F75-B348-C0709E1A7776}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
