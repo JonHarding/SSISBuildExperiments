@@ -63,4 +63,7 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Customer.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
 </Project>
