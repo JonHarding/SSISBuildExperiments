@@ -8,6 +8,7 @@
         <description>My package description.</description>
     </metadata>
     <files>
+        <file src="TestSSISDB\Test.publish.xml" target="Test.publish.xml" />
         <file src="TestSSISDB\bin\Debug\TestSSISDB.dacpac" target="TestSSISDB.dacpac" />
     </files>
 </package>
