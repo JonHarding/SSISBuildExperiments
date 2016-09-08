@@ -2,6 +2,8 @@ $targetConnectionString = $OctopusParameters["targetConnectionString"]
 $Dacpac = $OctopusParameters["Dacpac"]
 $targetDatabaseName = $OctopusParameters["targetDatabaseName"]
 $Profile = $OctopusParameters["Profile"]
+
+$DateTime = ((Get-Date).ToUniversalTime().ToString("yyyyMMddHHmmss"))
  
 #$dacfxPath = 'C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin\Microsoft.SqlServer.Dac.dll'
 <#
@@ -48,13 +50,13 @@ Function Find-DacFile {
 	Return $File
 }
  
-$logs = "C:\DacpacReport"
+#$logs = "C:\DacpacReport"
  
 #create log path
-$validate = Test-Path $logs
-if (!$logs){
-$logs = New-Item -ItemType Directory -Force -Path C:\DacpacReport
-}
+#$validate = Test-Path $logs
+#if (!$logs){
+#$logs = New-Item -ItemType Directory -Force -Path C:\DacpacReport
+#}
  
 # Load the DAC assembly
 Write-Verbose "Loading the DacFX Assemblies"
@@ -116,7 +118,15 @@ $dacServices = New-Object Microsoft.SqlServer.Dac.DacServices $server
 # Deploy package
 try {
 Write-Host 'Starting Dacpac deployment...'
-$dacServices.GenerateDeployScript($dacPackage,$targetDatabaseName, $dacProfile.DeployOptions) | Out-File "$logs\$targetDatabaseName.sql"
+#$dacServices.GenerateDeployScript($dacPackage,$targetDatabaseName, $dacProfile.DeployOptions) | Out-File "$logs\$targetDatabaseName.sql"
+Write-Host ("Generating deploy script against database: {0}" -f $targetDatabaseName)
+			$deployScript = $dacServices.GenerateDeployScript($dacPackage, $targetDatabaseName, $dacProfile.DeployOptions, $null)
+			$scriptArtifact = ("{0}.{1}.{2}.{3}" -f $targetConnectionString, $targetDatabaseName, $DateTime, "DeployScript.sql")
+		
+			Set-Content $scriptArtifact $deployScript
+		
+			Write-Host ("Loading the deploy script to OctopusDeploy: {0}" -f $scriptArtifact)
+			New-OctopusArtifact -Path $scriptArtifact -Name $scriptArtifact
 $dacServices.Deploy($dacPackage, $targetDatabaseName, $true, $dacProfile.DeployOptions, $null)
 Write-Host 'Deployment succeeded!'
 } catch [Microsoft.SqlServer.Dac.DacServicesException] {
