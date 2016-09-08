@@ -121,7 +121,7 @@ Write-Host 'Starting Dacpac deployment...'
 #$dacServices.GenerateDeployScript($dacPackage,$targetDatabaseName, $dacProfile.DeployOptions) | Out-File "$logs\$targetDatabaseName.sql"
 Write-Host ("Generating deploy script against database: {0}" -f $targetDatabaseName)
 			$deployScript = $dacServices.GenerateDeployScript($dacPackage, $targetDatabaseName, $dacProfile.DeployOptions, $null)
-			$scriptArtifact = ("{0}.{1}.{2}.{3}" -f $targetConnectionString, $targetDatabaseName, $DateTime, "DeployScript.sql")
+			$scriptArtifact = ("{0}.{1}.{2}" -f $targetDatabaseName, $DateTime, "DeployScript.sql")
 		
 			Set-Content $scriptArtifact $deployScript
 		
