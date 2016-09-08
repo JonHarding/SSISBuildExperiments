@@ -1,4 +1,7 @@
-param([string]$targetConnectionString, [string]$Dacpac, [string]$targetDatabaseName, [string]$Profile)
+$targetConnectionString = $OctopusParameters["targetConnectionString"]
+$Dacpac = $OctopusParameters["Dacpac"]
+$targetDatabaseName = $OctopusParameters["targetDatabaseName"]
+$Profile = $OctopusParameters["Profile"]
  
 #$dacfxPath = 'C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin\Microsoft.SqlServer.Dac.dll'
 <#
