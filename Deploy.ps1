@@ -110,7 +110,7 @@ $dacProfile = New-Object Microsoft.SqlServer.Dac.DacDeployOptions -Property @{
 }
  
 # Setup DacServices
-$server = "server=$targetConnectionString"
+$server = $targetConnectionString
 $dacServices = New-Object Microsoft.SqlServer.Dac.DacServices $server
  
 # Deploy package
